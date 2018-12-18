@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="https://unpkg.com/contentful-ui-extensions-sdk@3"></script>
+</head>
+<body>
+
+  <div class="field" id="app">
+    <div class="control">
+      <input v-model="document" class="input" type="text" placeholder="z.B. Allgemeine Geschäftsbedingungen - VW Conntect">
+    </div>
+  </div>
+
+
+  <script>
+    var vue = null;
+
+    window.contentfulExtension.init(function(api) {
+      api.window.startAutoResizer();		
+
+      const oldValue = api.field.getValue();
+
+      vue = new Vue({
+        el: "#app",
+        data: {
+          document: (oldValue) ? oldValue : "",
+        },
+        watch: {
+          document: function() {
+            api.field.setValue(this.document);
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
