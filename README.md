@@ -1,16 +1,16 @@
-# Contentful-Simple-UI-Extension-Demo
+# Contentful-Simple-UI-Extension
 Simple UI Extension for Contentful CMS
 
 Small Vue app which saves a simple text string.
 Boilerplate for more complex UI Extensions for Contentful CMS.
 
-## Dependencies
+## :rocket Dependencies
 Node & NPM
 
-## Configuration
+## :star Configuration
 Edit config attribute in package.json to insert your Contentful Space ID and the name and field type of the UI extension.
 
-## Available Scripts
+## :cloud Available Scripts
 In the project directory, you can run:
 
 ### `npm login`
