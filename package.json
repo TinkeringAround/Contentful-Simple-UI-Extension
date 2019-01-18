@@ -1,0 +1,26 @@
+{
+  "name": "contentful-simple-ui-extension-demo",
+  "version": "1.0.0",
+  "description": "Simple Contentful UI Extension saving a text field",
+  "main": "index.html",
+  "config": {
+    "space_id": "",
+    "extension_id": "",
+    "field_type": ""
+  },
+  "scripts": {
+    "login": "contentful login",
+    "create": "contentful extension create --space-id ${npm_package_config_space_id} --id ${npm_package_config_extension_id} --field-types ${npm_package_config_field_type} --descriptor ./extension.json --srcdoc ./index.html",
+    "deploy": "contentful extension update --space-id ${npm_package_config_space_id} --id ${npm_package_config_extension_id} --field-types ${npm_package_config_field_type} --descriptor ./extension.json  --srcdoc ./index.html --force",
+    "delete": "contentful extension delete --space-id ${npm_package_config_space_id} --id ${npm_package_config_extension_id} --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinkeringAround/Contentful-Simple-UI-Extension-Demo.git"
+  },
+  "author": "Thomas Maier",
+  "bugs": {
+    "url": "https://github.com/TinkeringAround/Contentful-Simple-UI-Extension-Demo/issues"
+  },
+  "homepage": "https://github.com/TinkeringAround/Contentful-Simple-UI-Extension-Demo#readme"
+}

@@ -1,0 +1,6 @@
+{
+    "id": "simpleExtension",
+    "name": "Simple UI Extension",
+    "src": "./index.html",
+    "fieldTypes": ["Text"]
+  }
