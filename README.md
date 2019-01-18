@@ -7,7 +7,8 @@ Boilerplate for more complex UI Extensions for Contentful CMS.
 ## :rocket: Dependencies & Installation
 Node & NPM
 
-`git clone https://github.com/TinkeringAround/Contentful-Simple-UI-Extension.git
+Run to clone this boilerplate:
+`git clone https://github.com/TinkeringAround/Contentful-Simple-UI-Extension.git`
 
 ## :star: Configuration
 Edit config attribute in package.json to insert your Contentful Space ID and the name and field type of the UI extension.
