@@ -22,5 +22,5 @@ Initial setup of a UI extension.
 ### `npm run deploy`
 Updating a existing UI extension.
 
-### `npm run delete``
+### `npm run delete`
 Deleta a existing UI extension.
