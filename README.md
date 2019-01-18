@@ -22,7 +22,9 @@ Fetches a Contenful management token after login via browser UI. This token will
 Initial setup of a UI extension.
 
 ### `npm run deploy`
-Updating a existing UI extension.
+Updating the existing UI extension.
+Throws an error if the extension has not been created by `npm create` or via Contentful Web UI.
 
 ### `npm run delete`
 Deleta a existing UI extension.
+Throws an error if the extension has not been created by `npm create` or via Contentful Web UI.
